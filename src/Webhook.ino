@@ -15,8 +15,6 @@ void setup() {
 
 void loop() {
     
-    digitalWrite(led, HIGH);
-    
     float t = dht.getTempCelcius();
     
     Particle.publish("Temperature", String(t), PRIVATE);
